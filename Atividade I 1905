@@ -1,1 +1,66 @@
+public class Q1Lista2 {
+    private String nome;
+    private double preco;
+    private int qestoque;
 
+    private static int Tprodutos;
+
+    public Q1Lista2(String nome, double preco, int qestoque) {
+        this.nome = nome;
+        if (preco >= 0) {
+            this.preco = preco;
+        } else {
+            this.preco = 0;
+            System.out.println("Valor inválido. Valor definido como 0 (zero)");
+        }
+        if (qestoque >= 0) {
+            this.qestoque = qestoque;
+        } else {
+            this.qestoque = 0;
+            System.out.println("Quantidade inválida. Valor definido como zero");
+        }
+        Tprodutos++;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public double getPreco() {
+        return preco;
+    }
+    public int getqestoque() {
+        return qestoque;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public void setPreco(double preco) {
+        if (preco >= 0) {
+            this.preco = preco;
+        } else {
+            System.out.println("Preço não pode ser negativo.");
+        }
+    }
+    public void setqestoque(int qestoque) {
+        if (qestoque >= 0) {
+            this.qestoque = qestoque;
+        } else {
+            System.out.println("Quantidade não pode ser negativa.");
+        }
+    }
+    public double calcularValorEstoque() {
+        return preco * qestoque;
+    }
+    public static int getTprodutos() {
+        return Tprodutos;
+    }
+    public void exibirDados() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: " + preco);
+        System.out.println("Quantidade: " + qestoque);
+        System.out.println("Valor em estoque: " + calcularValorEstoque());
+    }public static void main(String[] args) {
+        Q1Lista2 produtoTeste = new Q1Lista2("Teclado Mecânico", 150.00, 5);
+        produtoTeste.exibirDados();
+    }
+}

@@ -1,0 +1,14 @@
+public class Q2Lista2 {
+    public static void main (String[] args){
+        Produto p1 = new Produto("Notebook", 3500.0, 5);
+        Produto p2 = new Produto("Mouse", 80.0, 10);
+        Produto p3 = new Produto("Teclado", 150.0, 7);
+p1.exibirDados();
+p2.exibirDados();
+p3.exibirDados();
+System.out.println("Total de produtos: "
++ Produto.getTprodutos());
+       Produto p4 = newProduto("Monitor", -500, -2);
+       p4.exibirDados();
+    }
+}

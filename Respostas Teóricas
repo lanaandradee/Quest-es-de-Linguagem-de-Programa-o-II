@@ -1,0 +1,18 @@
+Qual a diferença entre atributo de instância e atributo estático?
+O atributo de instância pertence a cada objeto criado.. Já o atributo estático pertence à classe inteira e é compartilhado entre todos os objetos.
+
+
+Por que utilizamos atributos private? 
+Para controlar o acesso por meio dos métodos getters e setters. 
+
+
+O que aconteceria se os atributos fossem public? 
+Não teria o controle sobre quem poderia alterar o programa, o que pode gerar erros.
+
+
+Qual a função do construtor? 
+Inicializar os objetos no momento da criação e garantir que os valores iniciais sejam válidos.
+
+
+Como o encapsulamento ajuda na manutenção do sistema? 
+Protegendo os dados, organizando o código e facilitando alterações futuras sem afetar o resto do sistema.
